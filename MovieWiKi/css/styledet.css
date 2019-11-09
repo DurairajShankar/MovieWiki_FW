@@ -1,0 +1,111 @@
+/* This style page is for the first page herer named as index.html */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", sans-serif;
+  color: black;
+}
+/* setting bodys color and adding margins */
+body {
+  background-color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/*here plain text is mimiced as logt font loded from google font*/
+#logo {
+  font-family: "Georgia", cursive;
+  letter-spacing: 5px;
+  color: white;
+  display: inline;
+}
+
+#back {
+  float: right;
+  padding: 1% 2%;
+  background-color: red;
+  font-family: "times", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+  border: none;
+  border-radius: 3px;
+}
+
+label {
+  font-weight: 500;
+}
+/*this is the core part of the page where white color appears*/
+#root {
+  margin-top: 3%;
+  background-color: white;
+  min-width: 250px;
+  display: block;
+  padding: 5% 10%;
+}
+/*Movie name*/
+#root h1 {
+  display: inline;
+}
+/*movie poster*/
+#root img {
+  float: right;
+  display: block;
+}
+/*to make page responsive media queries are added*/
+@media only screen and (max-width: 375px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+hr {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: red;
+}
+#root img {
+  display: block;
+}
+h4 {
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
+@media only screen and (max-width: 350px) {
+  /*margins are made as 0*/
+  body {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /*image is made as full width*/
+
+  /*logo is appeard ugly on small screeens so moved to center*/
+  #logo {
+    text-align: center;
+  }
+  #root h1 {
+    display: block;
+    float: none;
+  }
+  #root img {
+    display: block;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  /*same as above*/
+  #root h1 {
+    display: block;
+    float: none;
+  }
+  #root img {
+    padding-top: 40px;
+    display: block;
+    float: left;
+  }
+  #logo {
+    text-align: center;
+  }
+}

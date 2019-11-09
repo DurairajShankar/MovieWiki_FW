@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Importing fonts from google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Hanalei&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--adding css as external-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--adding external script-->
+    <script src="./script/main.js"></script>
+
+    <title>MovieWIKI</title>
+  </head>
+  
+
+  
+  </div>
+  <body>
+    <div>
+      <!-- logo for this page-->
+	  <h1 id="logo">Movie WIKI</h1>
+	  <div class="w3-container w3-content w3-center w3-padding-24" style="max-width:1000px" id="band">
+  <div id="staff" class="container">
+      <img src="img\logo.png" alt="logo" style="width:300px;height;300px;" align=right">
+</div>
+</div>
+         
+      
+    </div>
+    <div id="query">
+		  
+      <!--searching compnent containes text box and button -->
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Enter movie name"
+      />
+      <input type="button" value="SEARCH" onclick="valueChange(this.value)" />
+    </div>
+
+    <!--main core heart of the page-->
+    <div id="main">
+      <!-- <h2>LIST OF MOVIES</h2>
+      <hr id="ruller" />-->
+      <!--cards are created inside this cardcontainer-->
+      <div id="cardcontainer"></div>
+    </div>
+    <div class="moreCover">
+      <button id="more" onclick="loadMore()">Load More</button>
+    </div>
+    <script>
+      //initail liading of the cards before starting typing
+      valueChange("a");
+    </script>
+  </body>
+</html>

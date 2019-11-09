@@ -1,0 +1,139 @@
+/* This style page is for the first page herer named as index.html */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
+/* for body seting background as dark and adding some margins*/
+body {
+  background-color: Black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/*here plain text is mimiced as logt font loded from google font*/
+#logo {
+  font-family: "Georgia", cursive;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#main {
+  margin-top: 2%;
+  text-align: center;
+}
+/*outer layer of searching compnents*/
+#query {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 2%;
+}
+/*search bar*/
+#search {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: black;
+  width: 80%;
+}
+/*adding margin to horizontal ruler */
+#ruller {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/*changind button's default apperance */
+#query input[type="button"] {
+  background-color: red;
+  margin: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+#query input[type="button"]:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+/*this is the outer layer of the country cards*/
+#cardcontainer {
+  margin-top: 3%;
+  text-align: center;
+}
+/*main card styling*/
+.card {
+  display: inline-block;
+  animation: ani 0.4s ease-in;
+  margin-top: 5%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: black;
+  height: 300px;
+  width: 150px;
+  max-height: 300px;
+  max-width: 150px;
+  color: white;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#MovieTitle,
+#MovieYear {
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.4);
+}
+/*movie name inside the  card*/
+
+#more {
+  padding: 1% 2%;
+  background-color: red;
+  margin: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  display: none;
+}
+.moreCover {
+  text-align: center;
+  padding-top: 3%;
+  
+}
+/*media query to make it as responsive*/
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-top: 2%;
+  }
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #query input[type="button"] {
+    margin-top: 2%;
+  }
+}
+
+/* animation for the cards*/
+@keyframes ani {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Detailed</title><!--Importing fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--adding css as external-->
+    <link rel="stylesheet" href="./css/styledet.css">
+    <!--adding external script-->
+    <script src="./script/maindet.js"></script>
+</head>
+<body>
+    
+               <div> <!--Logo for this page-->
+                <h1 id="logo">Movie WIKI </h1>
+                <button onclick="goBack()" id="back">Go Back</button>
+                </div>
+                    <!--details are displayed inside the root -->
+                <div id="root">
+
+                    <h1 id="title"></h1>  <!--Movie name-->
+                    <img id="flag" width='150px' height='200px'alt="Poster"> <!--movie poster-->
+                    
+                    <p>
+                        <br>
+                        <!-- basic details-->
+                        <h4>Basic deatils</h4>   
+                        <label for="year">Year : </label><span id="year"></span>
+                        <div><label for="type">Type : </label><span id="type"></span></div>
+                        <div><label for="genre">Genre : </label><span id="genre"></span></div>
+                        <div><label for="runtime">Runtime : </label><span id="runtime"></span></div>
+                        <div><label for="country">country : </label><span id="country"></span></div>
+                        <div><label for="release">Relese date : </label><span id="release"></span></div>
+                        <div><label for="language">Language : </label><span id="language"></span></div>
+                        <hr>
+                        <!--poeple behind the movie-->
+                        <h4>Cast & crew</h4>
+                        <div><label for="actors">Actors : </label><span id="actors"></span></div>
+                        <div><label for="director">Directors : </label><span id="director"></span></div>
+                        <div><label for="writer">Writer : </label><span id="writer"></span></div>
+                        <hr>
+
+                        <!-- Main story plot-->
+                        <h4>Plot</h4>
+                        <span id="plot"></span><hr>
+                                               
+                        
+                        <!--IMDB ratings and id-->
+                        <h4>IMDB</h4>
+                        <div><label for="imdbId">ID : </label><span id="imdbId"></span></div>
+                        <div><label for="imdbRating">Rating : </label><span id="imdbRating"></span></div>
+                        <div><label for="imdbVotes">No of votes : </label><span id="imdbVotes"></span></div>                         
+                        <hr>
+                        <h4>Ratings</h4>
+                        <div id="ratings"></div>
+                        <hr>
+                        
+                        <h4>Others</h4>
+                        <div><label for="boxoffice">Box Office : </label><span id="boxoffice"></span></div>                         
+                        <div><label for="production">Production : </label><span id="production"></span></div>                        
+                        <!--Awards own by the film or series-->
+                        <hr>
+                        <h4>Awards</h4>
+                        <div id="awards"></div>
+                       
+ 
+                    </p>
+
+                </div>
+
+                
+
+                    
+</body>
+</html>
