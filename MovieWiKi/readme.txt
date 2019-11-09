@@ -9,7 +9,4 @@ How to run:
   
 API USED:
   >> The API here used was <a href="http://www.omdbapi.com/" OMBb API 
-Fetch method was used to load the data from API's
-
-Pagination:
-  >>  
+Fetch method was used to load the data from API
